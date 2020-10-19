@@ -93,6 +93,61 @@
                     <view key="view" contentMode="scaleToFill" id="p1G-vs-lf8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="y0h-gj-0L4">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="512" id="gJN-Hb-r29">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="512"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gJN-Hb-r29" id="TmO-gX-Dwl">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="512"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="baO-jC-AC4">
+                                                    <rect key="frame" x="0.0" y="8" width="414" height="414"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="414" id="274-om-icT"/>
+                                                        <constraint firstAttribute="width" constant="414" id="UG6-yN-clI"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jiggifresh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9lj-wv-HZg">
+                                                    <rect key="frame" x="20" y="430" width="75" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is what my house looks like" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i7g-Ng-RAk">
+                                                    <rect key="frame" x="20" y="459" width="243" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="i7g-Ng-RAk" firstAttribute="leading" secondItem="TmO-gX-Dwl" secondAttribute="leadingMargin" id="00v-fZ-Cqn"/>
+                                                <constraint firstItem="9lj-wv-HZg" firstAttribute="top" secondItem="baO-jC-AC4" secondAttribute="bottom" constant="8" symbolic="YES" id="3DD-64-Sdz"/>
+                                                <constraint firstItem="baO-jC-AC4" firstAttribute="leading" secondItem="TmO-gX-Dwl" secondAttribute="leading" id="AcM-tY-lqz"/>
+                                                <constraint firstItem="baO-jC-AC4" firstAttribute="top" secondItem="TmO-gX-Dwl" secondAttribute="top" constant="8" id="NID-br-OuH"/>
+                                                <constraint firstItem="i7g-Ng-RAk" firstAttribute="top" secondItem="9lj-wv-HZg" secondAttribute="bottom" constant="8" symbolic="YES" id="Oas-s8-aFV"/>
+                                                <constraint firstItem="i7g-Ng-RAk" firstAttribute="top" secondItem="9lj-wv-HZg" secondAttribute="bottom" constant="8" symbolic="YES" id="Xzr-vv-tpx"/>
+                                                <constraint firstAttribute="trailing" secondItem="baO-jC-AC4" secondAttribute="trailing" id="Zdn-OM-96I"/>
+                                                <constraint firstItem="9lj-wv-HZg" firstAttribute="leading" secondItem="TmO-gX-Dwl" secondAttribute="leadingMargin" id="gey-uW-qMz"/>
+                                                <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="i7g-Ng-RAk" secondAttribute="bottom" constant="8" id="rgT-cg-GeM"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                        <connections>
+                                            <outlet property="captionLabel" destination="i7g-Ng-RAk" id="N8a-VN-wGj"/>
+                                            <outlet property="photoView" destination="baO-jC-AC4" id="zNo-BP-xJ6"/>
+                                            <outlet property="usernameLabel" destination="9lj-wv-HZg" id="qQU-xc-AJS"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="qL1-2U-gLw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -103,10 +158,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="y0h-gj-0L4" id="5zk-yx-wWc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gAR-wL-yj7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1484" y="78"/>
+            <point key="canvasLocation" x="1482.608695652174" y="77.678571428571431"/>
         </scene>
         <!--Camera View Controller-->
         <scene sceneID="B8z-2o-cKB">
@@ -182,6 +240,9 @@
         <image name="instagram_logo" width="255" height="108"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
