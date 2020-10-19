@@ -131,9 +131,9 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3FN-ki-4gO">
-                                <rect key="frame" x="348" y="413" width="46" height="41"/>
+                                <rect key="frame" x="178" y="400" width="58" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Post"/>
                                 <connections>
                                     <action selector="onSubmitButton:" destination="Dvl-m9-IcH" eventType="touchUpInside" id="rX4-lf-RJL"/>
