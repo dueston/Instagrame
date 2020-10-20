@@ -99,7 +99,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="512" id="gJN-Hb-r29">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="512" id="gJN-Hb-r29" customClass="PostCell" customModule="Instagrame" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="512"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gJN-Hb-r29" id="TmO-gX-Dwl">
@@ -113,14 +113,14 @@
                                                         <constraint firstAttribute="width" constant="414" id="UG6-yN-clI"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jiggifresh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9lj-wv-HZg">
-                                                    <rect key="frame" x="20" y="430" width="75" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is what my house looks like" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i7g-Ng-RAk">
+                                                    <rect key="frame" x="20" y="459" width="243" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is what my house looks like" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i7g-Ng-RAk">
-                                                    <rect key="frame" x="20" y="459" width="243" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jiggifresh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9lj-wv-HZg">
+                                                    <rect key="frame" x="20" y="430" width="75" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -128,14 +128,15 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="i7g-Ng-RAk" firstAttribute="leading" secondItem="TmO-gX-Dwl" secondAttribute="leadingMargin" id="00v-fZ-Cqn"/>
-                                                <constraint firstItem="9lj-wv-HZg" firstAttribute="top" secondItem="baO-jC-AC4" secondAttribute="bottom" constant="8" symbolic="YES" id="3DD-64-Sdz"/>
                                                 <constraint firstItem="baO-jC-AC4" firstAttribute="leading" secondItem="TmO-gX-Dwl" secondAttribute="leading" id="AcM-tY-lqz"/>
                                                 <constraint firstItem="baO-jC-AC4" firstAttribute="top" secondItem="TmO-gX-Dwl" secondAttribute="top" constant="8" id="NID-br-OuH"/>
-                                                <constraint firstItem="i7g-Ng-RAk" firstAttribute="top" secondItem="9lj-wv-HZg" secondAttribute="bottom" constant="8" symbolic="YES" id="Oas-s8-aFV"/>
-                                                <constraint firstItem="i7g-Ng-RAk" firstAttribute="top" secondItem="9lj-wv-HZg" secondAttribute="bottom" constant="8" symbolic="YES" id="Xzr-vv-tpx"/>
+                                                <constraint firstItem="9lj-wv-HZg" firstAttribute="leading" secondItem="TmO-gX-Dwl" secondAttribute="leadingMargin" id="R1p-Ki-KSD"/>
+                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="i7g-Ng-RAk" secondAttribute="trailing" id="XHr-mk-Bew"/>
                                                 <constraint firstAttribute="trailing" secondItem="baO-jC-AC4" secondAttribute="trailing" id="Zdn-OM-96I"/>
-                                                <constraint firstItem="9lj-wv-HZg" firstAttribute="leading" secondItem="TmO-gX-Dwl" secondAttribute="leadingMargin" id="gey-uW-qMz"/>
+                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="9lj-wv-HZg" secondAttribute="trailing" id="bR7-A3-CV9"/>
                                                 <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="i7g-Ng-RAk" secondAttribute="bottom" constant="8" id="rgT-cg-GeM"/>
+                                                <constraint firstItem="i7g-Ng-RAk" firstAttribute="top" secondItem="9lj-wv-HZg" secondAttribute="bottom" constant="8" symbolic="YES" id="u1a-T0-WBd"/>
+                                                <constraint firstItem="9lj-wv-HZg" firstAttribute="top" secondItem="baO-jC-AC4" secondAttribute="bottom" constant="8" symbolic="YES" id="ypf-EQ-1KV"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" systemColor="systemTealColor"/>

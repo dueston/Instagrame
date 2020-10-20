@@ -8,8 +8,9 @@
 
 import UIKit
 import Parse
-
-class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+import Alamofire
+import AlamofireImage
+class FeedViewController: UIViewController,  UITableViewDelegate, UITableViewDataSource {
     
     var posts = [PFObject]()
 
@@ -59,9 +60,14 @@ class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as! PostCell
         let post = posts[indexPath.row]
         let user = post["author"] as! PFUser
-        let caption = post["caption"] as! String
+//        let caption = post["caption"] as! String
         cell.usernameLabel.text = user.username
-        cell.captionLabel.text = caption
+//        cell.captionLabel.text = caption
+        let imageFile = post["image"] as! PFFileObject
+        let urlString = imageFile.url!
+        let url = URL(string: urlString)!
+        cell.photoView.af_setImage(withURL: url)
+        
         
         return cell
     }
