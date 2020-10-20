@@ -8,7 +8,6 @@
 
 import UIKit
 import Parse
-import Alamofire
 import AlamofireImage
 class FeedViewController: UIViewController,  UITableViewDelegate, UITableViewDataSource {
     
@@ -40,7 +39,7 @@ class FeedViewController: UIViewController,  UITableViewDelegate, UITableViewDat
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        let query = PFQuery(className:"Posts")
+        let query = PFQuery(className:"Post")
         query.includeKey("author")
         query.limit = 20
         
@@ -48,6 +47,7 @@ class FeedViewController: UIViewController,  UITableViewDelegate, UITableViewDat
             if posts != nil {
                 self.posts = posts!
                 self.tableView.reloadData()
+                print(self.posts.count)
             }
         }
     }
@@ -60,9 +60,9 @@ class FeedViewController: UIViewController,  UITableViewDelegate, UITableViewDat
         let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as! PostCell
         let post = posts[indexPath.row]
         let user = post["author"] as! PFUser
-//        let caption = post["caption"] as! String
+        let caption = post["caption"] as! String
         cell.usernameLabel.text = user.username
-//        cell.captionLabel.text = caption
+        cell.captionLabel.text = caption
         let imageFile = post["image"] as! PFFileObject
         let urlString = imageFile.url!
         let url = URL(string: urlString)!
