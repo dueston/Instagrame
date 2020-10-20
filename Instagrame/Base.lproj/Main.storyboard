@@ -110,7 +110,6 @@
                                                     <rect key="frame" x="0.0" y="8" width="414" height="414"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="414" id="qU0-86-nv9"/>
-                                                        <constraint firstAttribute="width" constant="414" id="vJE-J0-UNP"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is what my house looks like" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i7g-Ng-RAk">
