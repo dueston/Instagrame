@@ -20,6 +20,7 @@
 		5A43CAD4253D26F5005E4CA5 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A43CAD3253D26F5005E4CA5 /* FeedViewController.swift */; };
 		5A43CAD9253D53A1005E4CA5 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A43CAD8253D53A1005E4CA5 /* CameraViewController.swift */; };
 		5A43CB04253E5253005E4CA5 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A43CB03253E5253005E4CA5 /* PostCell.swift */; };
+		5A8793A0254577B6003B5C86 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A87939F254577B6003B5C86 /* CommentCell.swift */; };
 		65633CD8757904D664BDE9EB /* Pods_InstagrameTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5832A864E2C35D75A0F8904C /* Pods_InstagrameTests.framework */; };
 		78C246EC704374364C5D938B /* Pods_Instagrame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56FBD41C77CCB1250370948C /* Pods_Instagrame.framework */; };
 /* End PBXBuildFile section */
@@ -64,6 +65,7 @@
 		5A43CAD3253D26F5005E4CA5 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		5A43CAD8253D53A1005E4CA5 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		5A43CB03253E5253005E4CA5 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		5A87939F254577B6003B5C86 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		768AFCDD4C7242735DEC4055 /* Pods-Instagrame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagrame.debug.xcconfig"; path = "Target Support Files/Pods-Instagrame/Pods-Instagrame.debug.xcconfig"; sourceTree = "<group>"; };
 		8AE38479DDB653A4C5BB1A8A /* Pods-Instagrame-InstagrameUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagrame-InstagrameUITests.release.xcconfig"; path = "Target Support Files/Pods-Instagrame-InstagrameUITests/Pods-Instagrame-InstagrameUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B9487787D89025E6DFCC07EC /* Pods-Instagrame-InstagrameUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagrame-InstagrameUITests.debug.xcconfig"; path = "Target Support Files/Pods-Instagrame-InstagrameUITests/Pods-Instagrame-InstagrameUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				5A13726C253D036000AFE98E /* SceneDelegate.swift */,
 				5A13726E253D036000AFE98E /* ViewController.swift */,
 				5A137270253D036000AFE98E /* Main.storyboard */,
+				5A87939F254577B6003B5C86 /* CommentCell.swift */,
 				5A43CB03253E5253005E4CA5 /* PostCell.swift */,
 				5A43CAD8253D53A1005E4CA5 /* CameraViewController.swift */,
 				5A43CAD3253D26F5005E4CA5 /* FeedViewController.swift */,
@@ -426,6 +429,7 @@
 				5A13726B253D036000AFE98E /* AppDelegate.swift in Sources */,
 				5A13726D253D036000AFE98E /* SceneDelegate.swift in Sources */,
 				5A43CAD9253D53A1005E4CA5 /* CameraViewController.swift in Sources */,
+				5A8793A0254577B6003B5C86 /* CommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,7 +534,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -584,7 +588,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
